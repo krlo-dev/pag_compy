@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-bar {
+    background-color: #005BAC;
+    padding: 10px 0;
+}
+
+.nav-bar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-bar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.overlay .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #005BAC;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos de la sección de iconos */
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #005BAC;
+    color: white;
+}
