@@ -131,16 +131,21 @@ header {
 /* Sección de iconos */
 .icons-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitimos que los íconos se reorganicen en pantallas más pequeñas */
     padding: 40px;
     background-color: #f9f9f9;
+    gap: 20px; /* Añadimos un espacio uniforme entre los íconos */
 }
 
 .icon {
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Alineamos el contenido verticalmente */
+    justify-content: center; /* Centramos el contenido verticalmente */
+    align-items: center; /* Centramos el contenido horizontalmente */
+    width: 100%; /* Aseguramos que cada icono ocupe el 100% en dispositivos móviles */
     max-width: 200px;
-    width: 200px;
-    height: auto;
 }
 
 .icon img {
@@ -196,12 +201,18 @@ footer {
 
     .icons-section {
         flex-direction: column; /* Apilamos los íconos en una columna */
+        align-items: center; /* Centramos los íconos */
         gap: 20px;
+    }
+
+    .icon {
+        width: 100%; /* Aseguramos que los íconos ocupen el 100% en móviles */
+        max-width: none; /* Quitamos el máximo ancho */
     }
 
     .icon img {
         width: 50px;
-        height: 50px; /* Reducimos el tamaño de los íconos */
+        height: 50px; /* Ajustamos el tamaño de los íconos */
     }
 
     .icon p {
