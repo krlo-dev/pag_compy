@@ -257,28 +257,26 @@ body.dark-mode .icon-image[src*="aaa.png"] {
     background-color: #003f73;
 }
 
-/* Estilos responsivos */
+/* Responsividad: Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
-    /* Carrusel */
-    .carousel-container {
-        height: 300px; /* Reducir la altura del carrusel en dispositivos móviles */
-    }
-
     .carousel-text {
-        font-size: 24px; /* Reducir el tamaño del texto */
+        font-size: 24px; /* Reducir el tamaño del texto en dispositivos móviles */
     }
 
-    /* Iconos */
     .icons-section {
-        flex-direction: column; /* Apilar los iconos verticalmente */
-    }
-
-    .icon img {
-        width: 50px; /* Reducir el tamaño de los iconos */
-        height: 50px;
+        padding: 20px;
     }
 
     .video-container iframe {
-        height: 250px; /* Reducir la altura del video */
+        width: 100%; /* El video ocupa todo el ancho disponible */
+    }
+
+    .nav-bar nav ul {
+        flex-direction: column; /* Apilar los enlaces de navegación en dispositivos pequeños */
+        gap: 10px;
+    }
+
+    .logo-container img {
+        height: 100px; /* Reducir el tamaño del logo en pantallas pequeñas */
     }
 }
