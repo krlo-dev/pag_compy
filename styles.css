@@ -93,9 +93,10 @@ header {
     white-space: nowrap;
 }
 
+/* Eliminar subrayado en los enlaces */
 .nav-item a {
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* Eliminar subrayado */
+    color: black; /* Color negro para los textos */
     font-weight: bold;
 }
 
@@ -178,6 +179,20 @@ footer {
     color: white;
 }
 
+/* Sección del video debajo de los iconos */
+.video-container {
+    margin-top: 40px; /* Separación entre los iconos y el video */
+    display: flex;
+    justify-content: center; /* Centra el video horizontalmente */
+    padding: 20px;
+}
+
+.video-container iframe {
+    width: 100%; /* El video ocupará el 100% del contenedor */
+    max-width: 800px; /* Ancho máximo similar al de los iconos */
+    height: 450px; /* Mantener una altura proporcional */
+}
+
 /* Modo oscuro - colores de fondo y texto */
 body.dark-mode {
     background-color: #121212; /* Fondo oscuro */
@@ -210,25 +225,17 @@ body.dark-mode footer {
     color: #e0e0e0; /* Texto claro en el footer */
 }
 
-/* Flechas de navegación */
-.carousel-control-prev, .carousel-control-next {
-    position: absolute;
-    top: 40%; /* Alineamos las flechas con el texto */
-    z-index: 3;
-    width: 5%;
-    height: 100%;
+/* Cambiar iconos en modo oscuro */
+body.dark-mode .icon-image[src*="cc.png"] {
+    content: url('./imagenes/id_darkmode.png'); /* Imagen para el modo oscuro */
 }
 
-.carousel-control-prev {
-    left: 0;
+body.dark-mode .icon-image[src*="certificados.png"] {
+    content: url('./imagenes/documento_darkmode.png');
 }
 
-.carousel-control-next {
-    right: 0;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: white;
+body.dark-mode .icon-image[src*="aaa.png"] {
+    content: url('./imagenes/telefono_darkmode.png');
 }
 
 /* Botón de alternar modo */
