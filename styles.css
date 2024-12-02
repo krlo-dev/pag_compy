@@ -256,3 +256,29 @@ body.dark-mode .icon-image[src*="aaa.png"] {
 .switch-btn:hover {
     background-color: #003f73;
 }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Carrusel */
+    .carousel-container {
+        height: 300px; /* Reducir la altura del carrusel en dispositivos móviles */
+    }
+
+    .carousel-text {
+        font-size: 24px; /* Reducir el tamaño del texto */
+    }
+
+    /* Iconos */
+    .icons-section {
+        flex-direction: column; /* Apilar los iconos verticalmente */
+    }
+
+    .icon img {
+        width: 50px; /* Reducir el tamaño de los iconos */
+        height: 50px;
+    }
+
+    .video-container iframe {
+        height: 250px; /* Reducir la altura del video */
+    }
+}
